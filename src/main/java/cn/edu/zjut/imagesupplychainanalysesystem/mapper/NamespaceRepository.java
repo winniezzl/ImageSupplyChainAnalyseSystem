@@ -17,7 +17,7 @@ public interface NamespaceRepository extends Neo4jRepository<Namespace,String> {
     Namespace findByName(@Param("name")String name);
 
 
-    @Query("MATCH (n:Namespace {name:$name) RETURN n")
+    @Query("MATCH (n:Namespace {name:$name}) RETURN n")
     Boolean existsByName(@Param("name")String name);
 
 

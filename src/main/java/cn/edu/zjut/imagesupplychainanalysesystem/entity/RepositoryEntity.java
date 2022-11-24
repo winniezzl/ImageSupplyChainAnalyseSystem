@@ -57,7 +57,7 @@ public class RepositoryEntity implements Serializable {
 
     private String affiliation;
 
-    @Relationship(type = "影响资产", direction = Relationship.Direction.OUTGOING)
+    @Relationship(type = "HAS", direction = Relationship.Direction.OUTGOING)
     private List<Tags> TagsList;
 }
 
